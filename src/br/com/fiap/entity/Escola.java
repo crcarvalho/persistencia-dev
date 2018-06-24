@@ -74,7 +74,7 @@ public class Escola {
 
 	@Override
 	public String toString() {
-		return this.getNomeFantasia();
+		return this.getNomeFantasia() + " - "+ this.getCnpj();
 	}
 	
 	// propriedade de conveniencia

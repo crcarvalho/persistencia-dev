@@ -56,7 +56,7 @@ public class Aluno {
 	private String email;
 	
 	@OneToMany(cascade=CascadeType.ALL, fetch = FetchType.LAZY, mappedBy="curso_aluno")
-    private Set<CursoAluno> cursosAluno = new HashSet<>();
+    private Set<CursoAluno> cursosAluno = new HashSet<CursoAluno>();
 	
 	public Set<CursoAluno> getCursosAluno() {
 		return cursosAluno;
